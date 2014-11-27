@@ -4,6 +4,8 @@
 " A dark theme with bright, startling, vivid highlights
 " Based loosely on the Monokai colourscheme in Monodevelop
 
+" Monokai colour values obtained from https://github.com/sickill/vim-monokai
+
 " This work is Public Domain.
 
 hi clear
