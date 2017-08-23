@@ -185,16 +185,16 @@ syn region logoEsc start="|" end="|"
 
 " Map colors to our types
 hi def link logoComment Comment
-hi def link logoOperate Special
+hi def link logoOperate Operator
 hi def link logoCond Conditional
 hi def link logoKeyword Function
 hi def link logoDraw Function
 hi def link logoIter Repeat
-hi def link logoLiteral Constant
+hi def link logoLiteral StorageClass
 hi def link logoDeref Label
 hi def link logoFloat Float
 hi def link logoInt Number
-hi def link logoBrace Type
+hi def link logoBrace PreProc
 hi def link logoList Type
 hi def link logoMacro PreProc
 hi def link logoSpecial Special
