@@ -168,7 +168,7 @@ syn keyword logoSpecial logoplatform
 syn region logoComment start=";" end="$" 
 
 " Accessing variables
-syn match logoLiteral +"[a-zA-Z_][a-zA-Z0-9_]*+
+syn match logoLiteral +"[a-zA-Z_.][a-zA-Z0-9_.]*+
 syn match logoDeref +:[a-zA-Z_][a-zA-Z0-9_]*+
 
 " Numbers
