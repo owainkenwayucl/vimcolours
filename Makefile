@@ -3,12 +3,16 @@
 
 # This work is public domain.
 
-installdir = $(HOME)/.vim/colors
+installdir = $(HOME)/.vim
 
-install: $(installdir) $(installdir)/okdarkvivid.vim
+install: $(installdir) $(installdir)/colors/okdarkvivid.vim $(installdir)/syntax/logo.vim 
 
 $(installdir): 
 	mkdir -p $(installdir)
 
-$(installdir)/okdarkvivid.vim: okdarkvivid.vim
-	cp okdarkvivid.vim  $(installdir)
+$(installdir)/colors/okdarkvivid.vim: okdarkvivid.vim Makefile
+	cp okdarkvivid.vim  $(installdir)/colors
+
+$(installdir)/syntax/logo.vim: syntax/logo.vim Makefile
+	cp syntax/logo.vim  $(installdir)/syntax
+
