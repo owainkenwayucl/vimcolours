@@ -19,8 +19,8 @@ syn keyword logoKeyword butlast bl item mditem pick remove remdup quoted
 
 " Mutators
 syn keyword logoKeyword setitem mdsetitem setfirst push pop queue dequeue
-syn match logoKeyword ".setbf"
-syn match logoKeyword ".setitem"
+syn match logoKeyword "\.setbf"
+syn match logoKeyword "\.setitem"
 
 " Predicates
 syn keyword logoCond wordp listp arrayp emptyp equalp notequalp beforep
