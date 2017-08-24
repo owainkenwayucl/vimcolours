@@ -147,8 +147,8 @@ syn match logoIter "do\.until"
 syn match logoIter "map\.se"
 syn match logoIter "cascade\.2"
 syn keyword logoCond if ifelse test iftrue ift iffalse iff catcha case cond
-syn keyword logoOperator stop throw error bye
-syn match logoOperator "\.maybeoutput"
+syn keyword logoOperate stop throw error bye
+syn match logoOperate "\.maybeoutput"
 
 " Macros
 syn match logoMacro "\.macro"
