@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: LOGO
 " Maintainer: Dr Owain Kenway (github.com/owainkenwayucl)
-" Last Change: August 23rd, 2017
+" Last Change: August 24th, 2017
 
 if exists("b:current_syntax")
   finish
@@ -35,7 +35,7 @@ syn match logoCond "="
 syn match logoCond "notequal?"
 syn match logoCond "<>"
 syn match logoCond "before?"
-syn match logoCond ".eq"
+syn match logoCond "\.eq"
 syn match logoCond "member?"
 syn match logoCond "substring?"
 syn match logoCond "number?"
@@ -131,7 +131,7 @@ syn keyword logoKeyword unburyname trace untrace unstep step edit ed
 syn keyword logoKeyword editfile edall edps edns edpls edn edpl save savel
 syn keyword logoKeyword load cslsload help seteditor setliblocpath
 syn keyword logoKeyword sethelplocpath setcslslocpath settemplocpath gc
-syn match logoKeyword ".setsegmentsize"
+syn match logoKeyword "\.setsegmentsize"
 syn keyword logoCond buriedp tracedp steppedp
 syn match logoCond "buried?"
 syn match logoCond "traced?"
@@ -142,17 +142,17 @@ syn keyword logoIter run runresult repeat forever repcount foreach
 syn keyword logoIter pause continue co wait goto tag ignore for while
 syn keyword logoIter while until apply invoke map filter find reduce
 syn keyword logoIter crossmap cascade transfer
-syn match logoIter "do.while"
-syn match logoIter "do.until"
-syn match logoIter "map.se"
-syn match logoIter "cascade.2"
+syn match logoIter "do\.while"
+syn match logoIter "do\.until"
+syn match logoIter "map\.se"
+syn match logoIter "cascade\.2"
 syn keyword logoCond if ifelse test iftrue ift iffalse iff catcha case cond
 syn keyword logoOperator stop throw error bye
-syn match logoOperator ".maybeoutput"
+syn match logoOperator "\.maybeoutput"
 
 " Macros
-syn match logoMacro ".macro"
-syn match logoMacro ".defmacro"
+syn match logoMacro "\.macro"
+syn match logoMacro "\.defmacro"
 syn keyword logoMacro macrop
 syn match logoMacro "macro?"
 syn keyword logoMacro macroexpand
