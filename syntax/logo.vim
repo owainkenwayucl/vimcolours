@@ -166,6 +166,7 @@ syn keyword logoSpecial logoplatform
 
 " Comments
 syn region logoComment start=";" end="$" 
+syn region logoShebang start="\#\!\/" end="$" 
 
 " Accessing variables
 syn match logoLiteral +"[a-zA-Z_.][a-zA-Z0-9_.]*+
@@ -185,6 +186,7 @@ syn region logoEsc start="|" end="|"
 
 " Map colors to our types
 hi def link logoComment Comment
+hi def link logoShebang PreProc
 hi def link logoOperate Operator
 hi def link logoCond Conditional
 hi def link logoKeyword Function
