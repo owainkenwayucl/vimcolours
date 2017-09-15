@@ -5,7 +5,7 @@
 
 installdir = $(HOME)/.vim
 
-install: $(installdir) $(installdir)/colors/okdarkvivid.vim $(installdir)/syntax/logo.vim 
+install: $(installdir) $(installdir)/colors/okdarkvivid.vim $(installdir)/syntax/logo.vim $(installdir)/syntax/hy.vim
 
 $(installdir): 
 	mkdir -p $(installdir)
@@ -15,4 +15,7 @@ $(installdir)/colors/okdarkvivid.vim: okdarkvivid.vim Makefile
 
 $(installdir)/syntax/logo.vim: syntax/logo.vim Makefile
 	cp syntax/logo.vim  $(installdir)/syntax
+
+$(installdir)/syntax/hy.vim: syntax/hy.vim Makefile
+	cp syntax/hy.vim  $(installdir)/syntax
 
