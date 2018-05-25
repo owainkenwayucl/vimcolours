@@ -22,6 +22,11 @@ syn match hyCond ">"
 
 syn match hyOperate "+\|-\|/\|*"
 
+syn match hyOperate "+="
+syn match hyOperate "-="
+syn match hyOperate "*="
+syn match hyOperate "/="
+
 syn keyword hyCond if not and or
 
 syn region hyComment start=";" end="$" 
