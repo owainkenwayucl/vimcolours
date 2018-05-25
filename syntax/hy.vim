@@ -1,15 +1,15 @@
 " Vim syntax file
 " Language: hy
 " Maintainer: Dr Owain Kenway (github.com/owainkenwayucl)
-" Last Change: September 15th, 2017
+" Last Change: May 25th, 2018
 
 if exists("b:current_syntax")
   finish
 endif
 
-syn keyword hyKeyword setv print len 
+syn keyword hyKeyword setv print len defn def
 
-syn keyword hyIter for range
+syn keyword hyIter for range sum map yield
 
 syn keyword hyDeref import
 
